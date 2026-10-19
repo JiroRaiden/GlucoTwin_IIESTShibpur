@@ -1,7 +1,7 @@
 <title>GlucoTwin</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
 <style>
 /* GlucoTwin: minimalist clinical intelligence, charcoal light theme (final): charcoal ink and controls, muted data colours.
    A 12-column grid, one typeface (Inter), light green-grey surfaces, a deep forest-teal brand colour for the
@@ -354,6 +354,63 @@ footer { color: var(--text-2); font-size: var(--t-meta); margin-top: var(--s7); 
   .seg button { height: 34px; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* =====================================================================================
+   Presentation theme ("clinic"): the deck's graphite hero band with a steel-blue glow,
+   bolder headings, deeper sheets, accent rules on the three prediction cells, and the
+   alert as a dark panel. Overrides only; charts and data colours are unchanged.
+   ===================================================================================== */
+:root { --pred-ink: #3d6382; --pred-lite: #8fb3d4; --graphite: #121417; --r-sheet: 18px;
+  --sheet-shadow: 0 1px 2px rgba(30,32,35,.05), 0 14px 34px rgba(30,32,35,.07); --band: 300px; }
+body { background-color: var(--bg); }
+body::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: var(--band); z-index: -1;
+  background:
+    radial-gradient(1000px 420px at 80% -60px, rgba(79,116,147,.62), transparent 70%),
+    radial-gradient(760px 360px at 0% 0%, rgba(111,165,133,.18), transparent 70%),
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px) 0 0 / 100% 40px,
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px) 0 0 / 40px 100%,
+    linear-gradient(165deg, #171a1e 0%, var(--graphite) 55%, #0f1113 100%); }
+/* header and replay bar sit on the dark band: re-scope the tokens so every control follows */
+.header, .toolbar { --text: #f2f3f4; --text-2: rgba(255,255,255,.70); --text-3: rgba(255,255,255,.52); --faint: rgba(255,255,255,.45);
+  --border: rgba(255,255,255,.12); --border-strong: rgba(255,255,255,.26); --surface: #1c1f23; --surface-2: rgba(255,255,255,.06);
+  --subtle: rgba(255,255,255,.10); --accent: #eef0f2; --accent-hover: #fff; --on-accent: #15171a; --accent-bg: rgba(255,255,255,.1); }
+.header, .toolbar { color: var(--text); }
+.header { background: transparent; border-bottom-color: rgba(255,255,255,.08); }
+.brand { font-size: 17px; font-weight: 700; letter-spacing: -.01em; gap: 10px; }
+.brand svg { color: var(--pred-lite); width: 22px; height: 22px; }
+.nav a[aria-current="true"] { box-shadow: inset 0 -3px 0 var(--pred-lite); }
+.toolbar { background: rgba(18,20,23,.86); -webkit-backdrop-filter: saturate(140%) blur(12px); backdrop-filter: saturate(140%) blur(12px);
+  border-bottom-color: rgba(255,255,255,.08); }
+.toolbar input[type=range] { accent-color: var(--pred-lite); }
+.toggle input { accent-color: var(--pred-lite); }
+.btn-primary { box-shadow: 0 6px 18px rgba(0,0,0,.35); font-weight: 600; }
+/* headings: the deck's bold, tight titles */
+.page-head h1, .page-head h2 { font-size: 34px; font-weight: 700; letter-spacing: -.035em; }
+#monitor > .page-head h1 { color: #fff; }
+.patient h2 { font-size: 24px; font-weight: 700; letter-spacing: -.02em; }
+.h3 { font-weight: 700; letter-spacing: -.015em; }
+.sheet { border-color: #e3e5e8; }
+#monitor > .sheet { box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 30px 70px rgba(10,12,14,.22); }
+.now .value b { font-weight: 700; letter-spacing: -.045em; }
+/* the three prediction cells carry the colour of what they state */
+.pred > div { position: relative; }
+.pred > div::before { content: ""; position: absolute; left: var(--s5); right: var(--s5); top: -1px; height: 3px; border-radius: 0 0 3px 3px; }
+.pred > div:nth-child(1)::before { background: var(--pred); }
+.pred > div:nth-child(2)::before { background: var(--crit-mark); }
+.pred > div:nth-child(3)::before { background: var(--sim); }
+.pred > div:nth-child(1) .value b { color: var(--pred-ink); }
+.pred .value b { font-weight: 700; letter-spacing: -.03em; }
+/* the alert: a dark panel like the deck's alert card */
+.assess { --text: #fff; --text-2: rgba(255,255,255,.72); --crit: #ffb0b5; --crit-bg: rgba(217,87,94,.24); --warn: #f3c886; --warn-bg: rgba(201,143,56,.24);
+  --ok: #a9dbbd; --ok-bg: rgba(111,165,133,.24); color: var(--text); border-top: 0; border-radius: 0 0 17px 17px;
+  background: radial-gradient(600px 180px at 85% 0%, rgba(79,116,147,.5), transparent 70%), linear-gradient(160deg, #1a1d21, var(--graphite)); }
+.assess h3 { font-size: 17px; font-weight: 700; letter-spacing: -.01em; }
+.assess .status { border: 1px solid currentColor; }
+/* KPI numbers in steel ink, as on the slides */
+.modelcard b { font-size: 28px; font-weight: 700; letter-spacing: -.03em; color: var(--pred-ink); }
+.kpis dd, .meas dd { font-weight: 700; }
+.seg button[aria-pressed="true"] { font-weight: 600; }
+@media (max-width: 720px) { :root { --band: 350px; } .page-head h1, .page-head h2 { font-size: 28px; } }
 </style>
 
 <a class="skip" href="#main">Skip to monitor</a>

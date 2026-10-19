@@ -1,0 +1,49 @@
+{
+  "participants": 45,
+  "status_counts": {
+    "Prediabetes": 16,
+    "Healthy": 15,
+    "T2D": 14
+  },
+  "meals_logged": 1684,
+  "meals_clean": 1419,
+  "pct_meals_hyper_180": 40.5,
+  "dexcom_vs_libre_mard_pct": 25.3,
+  "variance_explained": [
+    {
+      "model": "M0  Carbs only",
+      "cv_r2": 0.025,
+      "cv_mae": 32.562,
+      "n_meals": 1419
+    },
+    {
+      "model": "M1  + full meal & context",
+      "cv_r2": 0.108,
+      "cv_mae": 31.169,
+      "n_meals": 1419
+    },
+    {
+      "model": "M2  + fasting labs (EHR)",
+      "cv_r2": 0.269,
+      "cv_mae": 27.766,
+      "n_meals": 1419
+    },
+    {
+      "model": "M3  + who the person is",
+      "cv_r2": 0.365,
+      "cv_mae": 25.678,
+      "n_meals": 1419
+    }
+  ],
+  "carb_sensitivity_mgdl_per_10g": {
+    "min": -1.6,
+    "median": 2.9,
+    "max": 7.7,
+    "n_people": 45
+  },
+  "similar_meal_band_40_70g": {
+    "n_meals": 497,
+    "rise_p10": 11.7,
+    "rise_p90": 132.5
+  }
+}

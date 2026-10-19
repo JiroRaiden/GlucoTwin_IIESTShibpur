@@ -1,0 +1,10 @@
+# Raw CGMacros data is CC BY-NC-SA: each user downloads it from PhysioNet; never redistributed
+data/raw/
+data/processed/
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+reports/_slide_preview_*.png
+dashboard/_shot.html
+

@@ -1,0 +1,76 @@
+{
+  "globals": {
+    "alpha": 0.3,
+    "beta": 0.0
+  },
+  "globals_search": [
+    {
+      "alpha": 0.0,
+      "beta": 0.0,
+      "train_rmse": 32.79324042448462
+    },
+    {
+      "alpha": 0.3,
+      "beta": 0.0,
+      "train_rmse": 32.434472075790985
+    },
+    {
+      "alpha": 0.0,
+      "beta": 0.5,
+      "train_rmse": 32.667607895457635
+    },
+    {
+      "alpha": 0.3,
+      "beta": 0.5,
+      "train_rmse": 32.535552921456116
+    }
+  ],
+  "n_patients": 45,
+  "holdout_rmse_2h_mgdl": {
+    "no_change_baseline": 39.3,
+    "average_twin": 34.3,
+    "personal_twin_0_days": 32.7,
+    "personal_twin_1_days": 33.8,
+    "personal_twin_2_days": 31.0,
+    "personal_twin_3_days": 30.6,
+    "personal_twin_5_days": 29.3,
+    "personal_twin_all_days": 29.0
+  },
+  "holdout_peak_error_mgdl": {
+    "no_change_baseline": 52.3,
+    "average_twin": 31.1,
+    "personal_twin_0_days": 30.5,
+    "personal_twin_1_days": 34.1,
+    "personal_twin_2_days": 32.4,
+    "personal_twin_3_days": 32.1,
+    "personal_twin_5_days": 30.9,
+    "personal_twin_all_days": 30.7
+  },
+  "median_params_by_status": {
+    "Healthy": {
+      "S": 3.59e-05,
+      "SG": 0.0123,
+      "ka": 0.0328,
+      "f": 0.105
+    },
+    "Prediabetes": {
+      "S": 5.83e-05,
+      "SG": 0.00593,
+      "ka": 0.0347,
+      "f": 0.15
+    },
+    "T2D": {
+      "S": 5.4e-05,
+      "SG": 0.00279,
+      "ka": 0.0303,
+      "f": 0.258
+    }
+  },
+  "group_separation_kruskal_p": {
+    "S": 0.39,
+    "SG": 1.1e-05,
+    "ka": 0.26,
+    "f": 0.00032
+  },
+  "runtime_s": 86.4
+}

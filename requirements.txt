@@ -1,0 +1,9 @@
+numpy>=2.0
+pandas>=2.2
+scipy>=1.13
+scikit-learn>=1.5
+matplotlib>=3.9
+pyarrow>=16
+lightgbm>=4.3
+shap>=0.45
+playwright>=1.40   # only for regenerating docs (architecture diagram, slides, screenshots)

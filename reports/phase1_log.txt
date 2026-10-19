@@ -1,0 +1,108 @@
+[1/5] Loading CGMacros from /mnt/user-data/uploads/Happest Health Hackathon/CGMacros_dateshifted365/CGMacros
+  P001:  14730 rows | 2020-05-01 -> 2020-05-11 | glucose coverage 96.9% | meals 42
+  P002:  17025 rows | 2019-11-15 -> 2019-11-27 | glucose coverage 80.3% | meals 35
+  P003:  14565 rows | 2020-03-11 -> 2020-03-21 | glucose coverage 97.9% | meals 35
+  P004:  14275 rows | 2023-09-11 -> 2023-09-21 | glucose coverage 100.0% | meals 59
+  P005:  14460 rows | 2020-08-17 -> 2020-08-27 | glucose coverage 98.7% | meals 45
+  P006:  14460 rows | 2023-04-07 -> 2023-04-17 | glucose coverage 98.7% | meals 37
+  P007:   5655 rows | 2023-11-03 -> 2023-11-10 | glucose coverage 99.4% | meals 17
+  P008:  14760 rows | 2023-01-30 -> 2023-02-09 | glucose coverage 96.7% | meals 30
+  P009:  14370 rows | 2020-09-15 -> 2020-09-25 | glucose coverage 99.1% | meals 41
+  P010:  16155 rows | 2020-06-21 -> 2020-07-02 | glucose coverage 88.4% | meals 45
+  P011:  14805 rows | 2020-10-03 -> 2020-10-13 | glucose coverage 96.4% | meals 39
+  P012:  14655 rows | 2023-02-26 -> 2023-03-08 | glucose coverage 97.3% | meals 33
+  P013:  15840 rows | 2024-01-25 -> 2024-02-05 | glucose coverage 90.1% | meals 39
+  P014:  17250 rows | 2023-05-09 -> 2023-05-21 | glucose coverage 82.8% | meals 40
+  P015:  16875 rows | 2024-01-25 -> 2024-02-06 | glucose coverage 82.8% | meals 51
+  P016:  16290 rows | 2023-07-14 -> 2023-07-25 | glucose coverage 87.6% | meals 28
+  P017:  16185 rows | 2023-10-10 -> 2023-10-21 | glucose coverage 88.2% | meals 48
+  P018:  14085 rows | 2024-01-28 -> 2024-02-16 | glucose coverage 50.7% | meals 38
+  P019:  14430 rows | 2020-09-29 -> 2020-10-09 | glucose coverage 98.8% | meals 47
+  P020:  16260 rows | 2024-03-19 -> 2024-03-30 | glucose coverage 87.8% | meals 41
+  P021:  16125 rows | 2020-06-08 -> 2020-06-19 | glucose coverage 88.5% | meals 39
+  P022:  17625 rows | 2021-03-28 -> 2021-04-09 | glucose coverage 81.0% | meals 42
+  P023:  16185 rows | 2021-05-05 -> 2021-05-16 | glucose coverage 88.2% | meals 42
+  P026:  16320 rows | 2021-03-26 -> 2021-04-06 | glucose coverage 85.3% | meals 36
+  P027:  14535 rows | 2024-06-10 -> 2024-06-20 | glucose coverage 98.2% | meals 35
+  P028:  18735 rows | 2023-11-28 -> 2023-12-11 | glucose coverage 76.2% | meals 34
+  P029:  17730 rows | 2024-01-17 -> 2024-01-29 | glucose coverage 80.5% | meals 30
+  P030:  15465 rows | 2021-01-23 -> 2021-02-03 | glucose coverage 92.3% | meals 28
+  P031:  13725 rows | 2022-06-29 -> 2022-07-09 | glucose coverage 99.6% | meals 50
+  P032:  13785 rows | 2022-01-01 -> 2022-01-11 | glucose coverage 99.2% | meals 20
+  P033:  15840 rows | 2022-04-16 -> 2022-04-27 | glucose coverage 90.1% | meals 33
+  P034:  14700 rows | 2022-03-02 -> 2022-03-12 | glucose coverage 97.1% | meals 48
+  P035:  14400 rows | 2024-12-12 -> 2024-12-22 | glucose coverage 99.1% | meals 27
+  P036:  17115 rows | 2022-03-29 -> 2022-04-10 | glucose coverage 83.4% | meals 30
+  P038:  14505 rows | 2022-01-25 -> 2022-02-04 | glucose coverage 98.4% | meals 39
+  P039:  17205 rows | 2025-02-07 -> 2025-02-19 | glucose coverage 83.0% | meals 34
+  P041:  14310 rows | 2022-04-26 -> 2022-05-06 | glucose coverage 99.5% | meals 47
+  P042:  14520 rows | 2025-07-25 -> 2025-08-04 | glucose coverage 98.3% | meals 22
+  P043:  14520 rows | 2025-10-14 -> 2025-10-24 | glucose coverage 98.2% | meals 63
+  P044:  14535 rows | 2022-10-17 -> 2022-10-27 | glucose coverage 98.2% | meals 42
+  P045:  15570 rows | 2025-03-25 -> 2025-04-05 | glucose coverage 87.8% | meals 32
+  P046:  14655 rows | 2025-05-01 -> 2025-05-11 | glucose coverage 97.2% | meals 28
+  P047:  15690 rows | 2025-10-30 -> 2025-11-10 | glucose coverage 91.0% | meals 29
+  P048:  17340 rows | 2022-11-14 -> 2022-11-26 | glucose coverage 82.3% | meals 36
+  P049:  15315 rows | 2025-05-11 -> 2025-05-22 | glucose coverage 93.2% | meals 28
+      45 participants | status: {'Prediabetes': 16, 'Healthy': 15, 'T2D': 14}
+      Dexcom vs Libre mean absolute relative difference: 25.3%
+[2/5] Saving 5-min grids
+[3/5] Measuring every meal's glucose response
+      1684 meals logged, 1419 clean responses (40.5% crossed 180 mg/dL)
+[4/5] Synthesising EHR history (anchored on real labs) + FHIR R4 export
+      45 FHIR bundles written
+[5/5] Personalisation evidence
+                    model  cv_r2  cv_mae  n_meals
+           M0  Carbs only  0.025  32.562     1419
+M1  + full meal & context  0.108  31.169     1419
+ M2  + fasting labs (EHR)  0.269  27.766     1419
+  M3  + who the person is  0.365  25.678     1419
+{
+  "participants": 45,
+  "status_counts": {
+    "Prediabetes": 16,
+    "Healthy": 15,
+    "T2D": 14
+  },
+  "meals_logged": 1684,
+  "meals_clean": 1419,
+  "pct_meals_hyper_180": 40.5,
+  "dexcom_vs_libre_mard_pct": 25.3,
+  "variance_explained": [
+    {
+      "model": "M0  Carbs only",
+      "cv_r2": 0.025,
+      "cv_mae": 32.562,
+      "n_meals": 1419
+    },
+    {
+      "model": "M1  + full meal & context",
+      "cv_r2": 0.108,
+      "cv_mae": 31.169,
+      "n_meals": 1419
+    },
+    {
+      "model": "M2  + fasting labs (EHR)",
+      "cv_r2": 0.269,
+      "cv_mae": 27.766,
+      "n_meals": 1419
+    },
+    {
+      "model": "M3  + who the person is",
+      "cv_r2": 0.365,
+      "cv_mae": 25.678,
+      "n_meals": 1419
+    }
+  ],
+  "carb_sensitivity_mgdl_per_10g": {
+    "min": -1.6,
+    "median": 2.9,
+    "max": 7.7,
+    "n_people": 45
+  },
+  "similar_meal_band_40_70g": {
+    "n_meals": 497,
+    "rise_p10": 11.7,
+    "rise_p90": 132.5
+  }
+}

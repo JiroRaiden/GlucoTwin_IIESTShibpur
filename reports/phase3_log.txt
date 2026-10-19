@@ -1,0 +1,42 @@
+[1/5] Building forecast origins (every 15 min) for 45 patients
+      43,020 origins | 14,807 in held-out days | spike base rate 13.4%
+[2/5] Cross-validated training (unseen patients x unseen days)
+      fold 0: train 34,348 | test 2,954 origins from 9 patients | thr 0.43
+      fold 1: train 34,363 | test 2,979 origins from 9 patients | thr 0.46
+      fold 2: train 34,364 | test 2,959 origins from 9 patients | thr 0.33
+      fold 3: train 34,644 | test 2,956 origins from 9 patients | thr 0.34
+      fold 4: train 34,361 | test 2,959 origins from 9 patients | thr 0.54
+[3/5] Metrics
+ horizon_min               model  rmse   mae  clarke_A  clarke_AB  clarke_CDE
+          30           No change 19.52 12.35     89.05      99.74        0.27
+          30 Twin only (physics) 18.25 11.75     91.03      99.79        0.21
+          30  Pure ML (LightGBM) 15.83 10.32     93.10      99.81        0.19
+          30    Hybrid twin + ML 15.13  9.89     93.97      99.84        0.16
+          60           No change 28.45 18.19     79.38      99.08        0.93
+          60 Twin only (physics) 25.16 16.12     83.89      99.42        0.58
+          60  Pure ML (LightGBM) 23.58 15.98     83.06      99.43        0.58
+          60    Hybrid twin + ML 22.15 14.91     85.40      99.58        0.42
+         120           No change 37.39 24.46     69.50      97.95        2.04
+         120 Twin only (physics) 31.31 20.05     77.09      98.51        1.50
+         120  Pure ML (LightGBM) 30.13 20.95     73.34      98.94        1.06
+         120    Hybrid twin + ML 27.17 18.56     78.16      99.24        0.75
+      spike AUROC Hybrid twin + ML             0.864  AUPRC 0.545
+      spike AUROC Pure ML (LightGBM)           0.840  AUPRC 0.481
+      spike AUROC Twin only (simulated peak)   0.669  AUPRC 0.180
+      spike AUROC Current glucose only         0.614  AUPRC 0.156
+      alerts Hybrid twin + ML           {'events': 232, 'detected': 217, 'sensitivity': 0.9353448275862069, 'median_lead_min': 90.0, 'false_alarms_per_day': 2.1382676072626343, 'test_patient_days': 150.1}
+      alerts Pure ML (LightGBM)         {'events': 232, 'detected': 216, 'sensitivity': 0.9310344827586207, 'median_lead_min': 65.0, 'false_alarms_per_day': 2.1649126864808603, 'test_patient_days': 150.1}
+      alerts Twin only (peak >= 180)    {'events': 232, 'detected': 76, 'sensitivity': 0.3275862068965517, 'median_lead_min': 35.0, 'false_alarms_per_day': 0.23980571296403377, 'test_patient_days': 150.1}
+                                            auroc  rmse60
+set                                                      
+Full hybrid                                 0.867  22.150
+- synthetic EHR fields                      0.864  22.096
+- all EHR (labs + twin params + synthetic)  0.870  21.981
+- wearable (HR, activity)                   0.864  22.127
+- meal log                                  0.850  22.492
+- twin (pure ML)                            0.841  23.580
+[4/5] Final models on all patients + SHAP
+/usr/local/lib/python3.13/dist-packages/shap/explainers/_tree.py:578: UserWarning: LightGBM binary classifier with TreeExplainer shap values output has changed to a list of ndarray
+  warnings.warn(
+[5/5] Figures + summary
+done in 160.3 s

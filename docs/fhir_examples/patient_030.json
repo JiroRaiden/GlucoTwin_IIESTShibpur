@@ -1,0 +1,608 @@
+{
+ "resourceType": "Bundle",
+ "id": "glucotwin-p030",
+ "type": "collection",
+ "entry": [
+  {
+   "resource": {
+    "resourceType": "Patient",
+    "id": "p030",
+    "meta": {
+     "tag": [
+      {
+       "system": "https://glucotwin.example/tags",
+       "code": "cgmacros",
+       "display": "Real measurement from CGMacros (PhysioNet)"
+      }
+     ]
+    },
+    "identifier": [
+     {
+      "system": "https://physionet.org/content/cgmacros",
+      "value": "CGMacros-030"
+     }
+    ],
+    "gender": "female",
+    "birthDate": "1966"
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "p030-4548-4",
+    "meta": {
+     "tag": [
+      {
+       "system": "https://glucotwin.example/tags",
+       "code": "cgmacros",
+       "display": "Real measurement from CGMacros (PhysioNet)"
+      }
+     ]
+    },
+    "status": "final",
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "4548-4",
+       "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/p030"
+    },
+    "effectiveDateTime": "2026-01-01",
+    "valueQuantity": {
+     "value": 7.6,
+     "unit": "%"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "p030-1558-6",
+    "meta": {
+     "tag": [
+      {
+       "system": "https://glucotwin.example/tags",
+       "code": "cgmacros",
+       "display": "Real measurement from CGMacros (PhysioNet)"
+      }
+     ]
+    },
+    "status": "final",
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "1558-6",
+       "display": "Fasting glucose [Mass/volume] in Serum or Plasma"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/p030"
+    },
+    "effectiveDateTime": "2026-01-01",
+    "valueQuantity": {
+     "value": 195.0,
+     "unit": "mg/dL"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "p030-20448-7",
+    "meta": {
+     "tag": [
+      {
+       "system": "https://glucotwin.example/tags",
+       "code": "cgmacros",
+       "display": "Real measurement from CGMacros (PhysioNet)"
+      }
+     ]
+    },
+    "status": "final",
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "20448-7",
+       "display": "Insulin [Units/volume] in Serum or Plasma"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/p030"
+    },
+    "effectiveDateTime": "2026-01-01",
+    "valueQuantity": {
+     "value": 10.5,
+     "unit": "u[IU]/mL"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "p030-2571-8",
+    "meta": {
+     "tag": [
+      {
+       "system": "https://glucotwin.example/tags",
+       "code": "cgmacros",
+       "display": "Real measurement from CGMacros (PhysioNet)"
+      }
+     ]
+    },
+    "status": "final",
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "2571-8",
+       "display": "Triglyceride [Mass/volume] in Serum or Plasma"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/p030"
+    },
+    "effectiveDateTime": "2026-01-01",
+    "valueQuantity": {
+     "value": 249.0,
+     "unit": "mg/dL"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "p030-2093-3",
+    "meta": {
+     "tag": [
+      {
+       "system": "https://glucotwin.example/tags",
+       "code": "cgmacros",
+       "display": "Real measurement from CGMacros (PhysioNet)"
+      }
+     ]
+    },
+    "status": "final",
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "2093-3",
+       "display": "Cholesterol [Mass/volume] in Serum or Plasma"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/p030"
+    },
+    "effectiveDateTime": "2026-01-01",
+    "valueQuantity": {
+     "value": 226.0,
+     "unit": "mg/dL"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "p030-2085-9",
+    "meta": {
+     "tag": [
+      {
+       "system": "https://glucotwin.example/tags",
+       "code": "cgmacros",
+       "display": "Real measurement from CGMacros (PhysioNet)"
+      }
+     ]
+    },
+    "status": "final",
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "2085-9",
+       "display": "HDL Cholesterol [Mass/volume] in Serum or Plasma"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/p030"
+    },
+    "effectiveDateTime": "2026-01-01",
+    "valueQuantity": {
+     "value": 38.0,
+     "unit": "mg/dL"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "p030-13457-7",
+    "meta": {
+     "tag": [
+      {
+       "system": "https://glucotwin.example/tags",
+       "code": "cgmacros",
+       "display": "Real measurement from CGMacros (PhysioNet)"
+      }
+     ]
+    },
+    "status": "final",
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "13457-7",
+       "display": "LDL Cholesterol (calculated) [Mass/volume]"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/p030"
+    },
+    "effectiveDateTime": "2026-01-01",
+    "valueQuantity": {
+     "value": 143.0,
+     "unit": "mg/dL"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "p030-39156-5",
+    "meta": {
+     "tag": [
+      {
+       "system": "https://glucotwin.example/tags",
+       "code": "cgmacros",
+       "display": "Real measurement from CGMacros (PhysioNet)"
+      }
+     ]
+    },
+    "status": "final",
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "39156-5",
+       "display": "Body mass index (BMI) [Ratio]"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/p030"
+    },
+    "effectiveDateTime": "2026-01-01",
+    "valueQuantity": {
+     "value": 34.01,
+     "unit": "kg/m2"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "p030-4548-4-m24",
+    "meta": {
+     "tag": [
+      {
+       "system": "https://glucotwin.example/tags",
+       "code": "synthetic",
+       "display": "Synthetic field generated from real labs"
+      }
+     ]
+    },
+    "status": "final",
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "4548-4",
+       "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/p030"
+    },
+    "effectiveDateTime": "2024-01-12",
+    "valueQuantity": {
+     "value": 7.3,
+     "unit": "%"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "p030-4548-4-m12",
+    "meta": {
+     "tag": [
+      {
+       "system": "https://glucotwin.example/tags",
+       "code": "synthetic",
+       "display": "Synthetic field generated from real labs"
+      }
+     ]
+    },
+    "status": "final",
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "4548-4",
+       "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/p030"
+    },
+    "effectiveDateTime": "2025-01-06",
+    "valueQuantity": {
+     "value": 7.5,
+     "unit": "%"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "p030-4548-4-m6",
+    "meta": {
+     "tag": [
+      {
+       "system": "https://glucotwin.example/tags",
+       "code": "synthetic",
+       "display": "Synthetic field generated from real labs"
+      }
+     ]
+    },
+    "status": "final",
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "4548-4",
+       "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/p030"
+    },
+    "effectiveDateTime": "2025-07-05",
+    "valueQuantity": {
+     "value": 7.7,
+     "unit": "%"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Condition",
+    "id": "p030-E11.9",
+    "meta": {
+     "tag": [
+      {
+       "system": "https://glucotwin.example/tags",
+       "code": "synthetic",
+       "display": "Synthetic field generated from real labs"
+      }
+     ]
+    },
+    "clinicalStatus": {
+     "text": "active"
+    },
+    "code": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/icd-10",
+       "code": "E11.9",
+       "display": "Type 2 diabetes mellitus without complications"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/p030"
+    },
+    "onsetDateTime": "2018-02-22"
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Condition",
+    "id": "p030-E66.9",
+    "meta": {
+     "tag": [
+      {
+       "system": "https://glucotwin.example/tags",
+       "code": "synthetic",
+       "display": "Synthetic field generated from real labs"
+      }
+     ]
+    },
+    "clinicalStatus": {
+     "text": "active"
+    },
+    "code": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/icd-10",
+       "code": "E66.9",
+       "display": "Obesity, unspecified"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/p030"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Condition",
+    "id": "p030-E78.5",
+    "meta": {
+     "tag": [
+      {
+       "system": "https://glucotwin.example/tags",
+       "code": "synthetic",
+       "display": "Synthetic field generated from real labs"
+      }
+     ]
+    },
+    "clinicalStatus": {
+     "text": "active"
+    },
+    "code": {
+     "coding": [
+      {
+       "system": "http://hl7.org/fhir/sid/icd-10",
+       "code": "E78.5",
+       "display": "Hyperlipidaemia, unspecified"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/p030"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "MedicationStatement",
+    "id": "p030-med0",
+    "meta": {
+     "tag": [
+      {
+       "system": "https://glucotwin.example/tags",
+       "code": "synthetic",
+       "display": "Synthetic field generated from real labs"
+      }
+     ]
+    },
+    "status": "active",
+    "medicationCodeableConcept": {
+     "text": "Metformin 500 mg BD"
+    },
+    "subject": {
+     "reference": "Patient/p030"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "MedicationStatement",
+    "id": "p030-med1",
+    "meta": {
+     "tag": [
+      {
+       "system": "https://glucotwin.example/tags",
+       "code": "synthetic",
+       "display": "Synthetic field generated from real labs"
+      }
+     ]
+    },
+    "status": "active",
+    "medicationCodeableConcept": {
+     "text": "Atorvastatin 10 mg OD"
+    },
+    "subject": {
+     "reference": "Patient/p030"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "FamilyMemberHistory",
+    "id": "p030-fh",
+    "meta": {
+     "tag": [
+      {
+       "system": "https://glucotwin.example/tags",
+       "code": "synthetic",
+       "display": "Synthetic field generated from real labs"
+      }
+     ]
+    },
+    "status": "completed",
+    "patient": {
+     "reference": "Patient/p030"
+    },
+    "relationship": {
+     "text": "first-degree relative"
+    },
+    "condition": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10",
+         "code": "E11",
+         "display": "Type 2 diabetes mellitus"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "p030-tcf7l2",
+    "meta": {
+     "tag": [
+      {
+       "system": "https://glucotwin.example/tags",
+       "code": "synthetic",
+       "display": "Synthetic field generated from real labs"
+      }
+     ]
+    },
+    "status": "final",
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "69548-6",
+       "display": "Genetic variant assessment"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/p030"
+    },
+    "component": [
+     {
+      "code": {
+       "text": "dbSNP rs7903146 (TCF7L2)"
+      },
+      "valueString": "TT"
+     },
+     {
+      "code": {
+       "text": "T2D polygenic risk score percentile"
+      },
+      "valueQuantity": {
+       "value": 91.2,
+       "unit": "%"
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

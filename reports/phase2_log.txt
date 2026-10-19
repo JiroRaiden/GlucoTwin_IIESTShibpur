@@ -1,0 +1,87 @@
+[1/5] 45 patients
+[2/5] Choosing population constants (exercise effect alpha, fat/protein slowing beta)
+      alpha=0.0   beta=0.0  train RMSE  32.79
+      alpha=0.3   beta=0.0  train RMSE  32.43
+      alpha=0.0   beta=0.5  train RMSE  32.67
+      alpha=0.3   beta=0.5  train RMSE  32.54
+      -> alpha=0.3, beta=0.0
+      45 patients have >=3 training meals and >=1 held-out meal
+[3/5] Stage A: data-driven twin per patient (weak prior) -> targets for the EHR prior
+[4/5] Leave-one-patient-out EHR prior + learning curve on held-out days
+      P001 [Healthy    ] train meals  26 | held-out 10 | no-change  17.1 | avg twin  27.1 | personal twin  14.3 mg/dL
+      P002 [Healthy    ] train meals  18 | held-out  9 | no-change  46.0 | avg twin  22.7 | personal twin  24.0 mg/dL
+      P003 [T2D        ] train meals  22 | held-out 10 | no-change  33.3 | avg twin  23.3 | personal twin  24.6 mg/dL
+      P004 [Healthy    ] train meals  26 | held-out 12 | no-change  23.9 | avg twin  32.4 | personal twin  19.9 mg/dL
+      P005 [T2D        ] train meals  23 | held-out 11 | no-change  37.4 | avg twin  34.1 | personal twin  29.1 mg/dL
+      P006 [Healthy    ] train meals  22 | held-out 11 | no-change  22.3 | avg twin  26.5 | personal twin  20.4 mg/dL
+      P007 [Prediabetes] train meals   8 | held-out  8 | no-change  27.9 | avg twin  22.5 | personal twin  20.5 mg/dL
+      P008 [Prediabetes] train meals  20 | held-out  9 | no-change  49.2 | avg twin  27.1 | personal twin  26.2 mg/dL
+      P009 [Prediabetes] train meals  25 | held-out 11 | no-change  21.6 | avg twin  33.5 | personal twin  20.5 mg/dL
+      P010 [Prediabetes] train meals  26 | held-out 11 | no-change  32.4 | avg twin  25.2 | personal twin  18.0 mg/dL
+      P011 [Prediabetes] train meals  25 | held-out 11 | no-change  30.3 | avg twin  18.5 | personal twin  16.3 mg/dL
+      P012 [T2D        ] train meals  22 | held-out 10 | no-change  41.7 | avg twin  29.3 | personal twin  41.0 mg/dL
+      P013 [Prediabetes] train meals  23 | held-out 11 | no-change  28.5 | avg twin  42.4 | personal twin  22.2 mg/dL
+      P014 [T2D        ] train meals  22 | held-out 12 | no-change  42.8 | avg twin  27.1 | personal twin  26.2 mg/dL
+      P015 [Healthy    ] train meals  22 | held-out 12 | no-change  30.9 | avg twin  26.9 | personal twin  20.5 mg/dL
+      P016 [Prediabetes] train meals  17 | held-out 10 | no-change  29.9 | avg twin  19.2 | personal twin  21.4 mg/dL
+      P017 [Healthy    ] train meals  24 | held-out 10 | no-change  23.3 | avg twin  33.7 | personal twin  15.8 mg/dL
+      P018 [Healthy    ] train meals  22 | held-out 11 | no-change  22.4 | avg twin  24.4 | personal twin  21.0 mg/dL
+      P019 [Healthy    ] train meals  23 | held-out 11 | no-change  27.1 | avg twin  21.8 | personal twin  19.5 mg/dL
+      P020 [Prediabetes] train meals  24 | held-out 10 | no-change  50.6 | avg twin  28.0 | personal twin  27.4 mg/dL
+      P021 [Healthy    ] train meals  22 | held-out 10 | no-change  33.1 | avg twin  72.6 | personal twin  25.5 mg/dL
+      P022 [Prediabetes] train meals  25 | held-out 11 | no-change  25.8 | avg twin  34.3 | personal twin  16.8 mg/dL
+      P023 [Prediabetes] train meals  27 | held-out 12 | no-change  52.3 | avg twin  39.9 | personal twin  35.9 mg/dL
+      P026 [Prediabetes] train meals  21 | held-out  7 | no-change  47.2 | avg twin  35.4 | personal twin  34.5 mg/dL
+      P027 [Healthy    ] train meals  22 | held-out  9 | no-change  34.1 | avg twin  23.6 | personal twin  24.0 mg/dL
+      P028 [T2D        ] train meals  22 | held-out 10 | no-change  48.7 | avg twin  24.5 | personal twin  26.9 mg/dL
+      P029 [Prediabetes] train meals  20 | held-out  9 | no-change  30.3 | avg twin  23.4 | personal twin  19.7 mg/dL
+      P030 [T2D        ] train meals  18 | held-out  9 | no-change  83.1 | avg twin  76.1 | personal twin  66.9 mg/dL
+      P031 [Healthy    ] train meals  19 | held-out 11 | no-change  21.8 | avg twin  35.1 | personal twin  17.0 mg/dL
+      P032 [Healthy    ] train meals  12 | held-out  8 | no-change  32.1 | avg twin  31.8 | personal twin  26.9 mg/dL
+      P033 [Healthy    ] train meals  22 | held-out 10 | no-change  69.7 | avg twin  54.2 | personal twin  48.9 mg/dL
+      P034 [Healthy    ] train meals  26 | held-out  9 | no-change  12.3 | avg twin  31.0 | personal twin  14.6 mg/dL
+      P035 [T2D        ] train meals  19 | held-out  8 | no-change  73.4 | avg twin  57.8 | personal twin  45.2 mg/dL
+      P036 [T2D        ] train meals  20 | held-out  9 | no-change  59.1 | avg twin  39.1 | personal twin  54.7 mg/dL
+      P038 [T2D        ] train meals  22 | held-out 10 | no-change  24.7 | avg twin  28.1 | personal twin  28.9 mg/dL
+      P039 [T2D        ] train meals  22 | held-out  9 | no-change 101.3 | avg twin  74.9 | personal twin  66.9 mg/dL
+      P041 [Prediabetes] train meals  29 | held-out 12 | no-change  53.5 | avg twin  31.7 | personal twin  37.7 mg/dL
+      P042 [T2D        ] train meals  15 | held-out  6 | no-change  24.1 | avg twin  27.9 | personal twin  27.8 mg/dL
+      P043 [Prediabetes] train meals  29 | held-out 11 | no-change  14.7 | avg twin  23.0 | personal twin  20.5 mg/dL
+      P044 [Prediabetes] train meals  24 | held-out 10 | no-change  39.4 | avg twin  26.0 | personal twin  25.5 mg/dL
+      P045 [Prediabetes] train meals  19 | held-out 10 | no-change  75.5 | avg twin  63.9 | personal twin  62.6 mg/dL
+      P046 [T2D        ] train meals  17 | held-out  9 | no-change  49.2 | avg twin  41.6 | personal twin  40.2 mg/dL
+      P047 [T2D        ] train meals  20 | held-out  8 | no-change  38.4 | avg twin  33.3 | personal twin  47.5 mg/dL
+      P048 [Healthy    ] train meals  21 | held-out 12 | no-change  31.9 | avg twin  28.9 | personal twin  26.4 mg/dL
+      P049 [T2D        ] train meals  19 | held-out  8 | no-change  87.4 | avg twin  59.2 | personal twin  41.3 mg/dL
+[5/5] Final EHR prior on all patients, figures, summary
+{
+  "no_change_baseline": 39.3,
+  "average_twin": 34.3,
+  "personal_twin_0_days": 32.7,
+  "personal_twin_1_days": 33.8,
+  "personal_twin_2_days": 31.0,
+  "personal_twin_3_days": 30.6,
+  "personal_twin_5_days": 29.3,
+  "personal_twin_all_days": 29.0
+}
+{
+  "Healthy": {
+    "S": 3.59e-05,
+    "SG": 0.0123,
+    "ka": 0.0328,
+    "f": 0.105
+  },
+  "Prediabetes": {
+    "S": 5.83e-05,
+    "SG": 0.00593,
+    "ka": 0.0347,
+    "f": 0.15
+  },
+  "T2D": {
+    "S": 5.4e-05,
+    "SG": 0.00279,
+    "ka": 0.0303,
+    "f": 0.258
+  }
+}
+done in 86.4 s

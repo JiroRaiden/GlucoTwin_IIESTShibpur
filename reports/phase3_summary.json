@@ -1,0 +1,272 @@
+{
+  "n_origins": 43020,
+  "n_test_origins": 14807,
+  "n_patients": 45,
+  "spike_base_rate_test": 0.1305,
+  "regression": [
+    {
+      "horizon_min": 30,
+      "model": "No change",
+      "rmse": 19.52,
+      "mae": 12.35,
+      "clarke_A": 89.05,
+      "clarke_AB": 99.74,
+      "clarke_CDE": 0.27
+    },
+    {
+      "horizon_min": 30,
+      "model": "Twin only (physics)",
+      "rmse": 18.25,
+      "mae": 11.75,
+      "clarke_A": 91.03,
+      "clarke_AB": 99.79,
+      "clarke_CDE": 0.21
+    },
+    {
+      "horizon_min": 30,
+      "model": "Pure ML (LightGBM)",
+      "rmse": 15.83,
+      "mae": 10.32,
+      "clarke_A": 93.1,
+      "clarke_AB": 99.81,
+      "clarke_CDE": 0.19
+    },
+    {
+      "horizon_min": 30,
+      "model": "Hybrid twin + ML",
+      "rmse": 15.13,
+      "mae": 9.89,
+      "clarke_A": 93.97,
+      "clarke_AB": 99.84,
+      "clarke_CDE": 0.16
+    },
+    {
+      "horizon_min": 60,
+      "model": "No change",
+      "rmse": 28.45,
+      "mae": 18.19,
+      "clarke_A": 79.38,
+      "clarke_AB": 99.08,
+      "clarke_CDE": 0.93
+    },
+    {
+      "horizon_min": 60,
+      "model": "Twin only (physics)",
+      "rmse": 25.16,
+      "mae": 16.12,
+      "clarke_A": 83.89,
+      "clarke_AB": 99.42,
+      "clarke_CDE": 0.58
+    },
+    {
+      "horizon_min": 60,
+      "model": "Pure ML (LightGBM)",
+      "rmse": 23.58,
+      "mae": 15.98,
+      "clarke_A": 83.06,
+      "clarke_AB": 99.43,
+      "clarke_CDE": 0.58
+    },
+    {
+      "horizon_min": 60,
+      "model": "Hybrid twin + ML",
+      "rmse": 22.15,
+      "mae": 14.91,
+      "clarke_A": 85.4,
+      "clarke_AB": 99.58,
+      "clarke_CDE": 0.42
+    },
+    {
+      "horizon_min": 120,
+      "model": "No change",
+      "rmse": 37.39,
+      "mae": 24.46,
+      "clarke_A": 69.5,
+      "clarke_AB": 97.95,
+      "clarke_CDE": 2.04
+    },
+    {
+      "horizon_min": 120,
+      "model": "Twin only (physics)",
+      "rmse": 31.31,
+      "mae": 20.05,
+      "clarke_A": 77.09,
+      "clarke_AB": 98.51,
+      "clarke_CDE": 1.5
+    },
+    {
+      "horizon_min": 120,
+      "model": "Pure ML (LightGBM)",
+      "rmse": 30.13,
+      "mae": 20.95,
+      "clarke_A": 73.34,
+      "clarke_AB": 98.94,
+      "clarke_CDE": 1.06
+    },
+    {
+      "horizon_min": 120,
+      "model": "Hybrid twin + ML",
+      "rmse": 27.17,
+      "mae": 18.56,
+      "clarke_A": 78.16,
+      "clarke_AB": 99.24,
+      "clarke_CDE": 0.75
+    }
+  ],
+  "spike_classification_all_times": {
+    "Hybrid twin + ML": {
+      "auroc": 0.864,
+      "auprc": 0.545,
+      "prevalence": 0.131
+    },
+    "Pure ML (LightGBM)": {
+      "auroc": 0.84,
+      "auprc": 0.481,
+      "prevalence": 0.131
+    },
+    "Twin only (simulated peak)": {
+      "auroc": 0.669,
+      "auprc": 0.18,
+      "prevalence": 0.131
+    },
+    "Current glucose only": {
+      "auroc": 0.614,
+      "auprc": 0.156,
+      "prevalence": 0.131
+    }
+  },
+  "spike_classification_at_meal_start": {
+    "Hybrid twin + ML": {
+      "auroc": 0.858,
+      "auprc": 0.774,
+      "prevalence": 0.312
+    },
+    "Pure ML (LightGBM)": {
+      "auroc": 0.827,
+      "auprc": 0.716,
+      "prevalence": 0.312
+    },
+    "Twin only (simulated peak)": {
+      "auroc": 0.784,
+      "auprc": 0.556,
+      "prevalence": 0.312
+    },
+    "n_meal_origins": 513
+  },
+  "alerts": {
+    "Hybrid twin + ML": {
+      "events": 232,
+      "detected": 217,
+      "sensitivity": 0.935,
+      "median_lead_min": 90.0,
+      "false_alarms_per_day": 2.138,
+      "test_patient_days": 150.1
+    },
+    "Pure ML (LightGBM)": {
+      "events": 232,
+      "detected": 216,
+      "sensitivity": 0.931,
+      "median_lead_min": 65.0,
+      "false_alarms_per_day": 2.165,
+      "test_patient_days": 150.1
+    },
+    "Twin only (peak >= 180)": {
+      "events": 232,
+      "detected": 76,
+      "sensitivity": 0.328,
+      "median_lead_min": 35.0,
+      "false_alarms_per_day": 0.24,
+      "test_patient_days": 150.1
+    }
+  },
+  "alert_threshold_per_fold": [
+    0.43,
+    0.46,
+    0.33,
+    0.34,
+    0.54
+  ],
+  "ablation": [
+    {
+      "set": "Full hybrid",
+      "auroc": 0.867,
+      "rmse60": 22.15
+    },
+    {
+      "set": "- synthetic EHR fields",
+      "auroc": 0.864,
+      "rmse60": 22.096
+    },
+    {
+      "set": "- all EHR (labs + twin params + synthetic)",
+      "auroc": 0.87,
+      "rmse60": 21.981
+    },
+    {
+      "set": "- wearable (HR, activity)",
+      "auroc": 0.864,
+      "rmse60": 22.127
+    },
+    {
+      "set": "- meal log",
+      "auroc": 0.85,
+      "rmse60": 22.492
+    },
+    {
+      "set": "- twin (pure ML)",
+      "auroc": 0.841,
+      "rmse60": 23.58
+    }
+  ],
+  "top_shap_features": [
+    {
+      "feature": "current glucose",
+      "mean_abs_shap": 1.2849
+    },
+    {
+      "feature": "time of day",
+      "mean_abs_shap": 0.6688
+    },
+    {
+      "feature": "twin forecast +120 min",
+      "mean_abs_shap": 0.3299
+    },
+    {
+      "feature": "twin-simulated peak (2 h)",
+      "mean_abs_shap": 0.2356
+    },
+    {
+      "feature": "heart rate vs personal baseline",
+      "mean_abs_shap": 0.2333
+    },
+    {
+      "feature": "time since last meal",
+      "mean_abs_shap": 0.2013
+    },
+    {
+      "feature": "twin: effective carb load",
+      "mean_abs_shap": 0.1961
+    },
+    {
+      "feature": "twin forecast +60 min",
+      "mean_abs_shap": 0.1906
+    },
+    {
+      "feature": "protein in last meal",
+      "mean_abs_shap": 0.1853
+    },
+    {
+      "feature": "2-h minimum glucose",
+      "mean_abs_shap": 0.181
+    },
+    {
+      "feature": "5-min glucose change",
+      "mean_abs_shap": 0.154
+    },
+    {
+      "feature": "carbs eaten in last 3 h",
+      "mean_abs_shap": 0.1428
+    }
+  ],
+  "runtime_s": 160.3
+}

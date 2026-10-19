@@ -21,7 +21,7 @@
 | Team name | GlucoTwin |
 |---|---|
 | Team leader | **Bishal Mandi** (solo team) |
-| Programme | B.Tech, Information Technology, 2nd year |
+| Programme | B.Tech, Information Technology, 3rd year |
 | College | **Indian Institute of Engineering Science and Technology (IIEST), Shibpur**, Howrah, West Bengal |
 | GitHub | [@JiroRaiden](https://github.com/JiroRaiden) |
 

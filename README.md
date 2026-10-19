@@ -6,7 +6,7 @@
 
 | | |
 |---|---|
-| **Live dashboard** | *(deploy link added after Vercel deploy)* |
+| **Live dashboard** | [https://gluco-twin-iiest-shibpur.vercel.app](https://gluco-twin-iiest-shibpur.vercel.app) |
 | **Demo video (unlisted YouTube)** | *(YouTube link added after upload)* |
 | **Presentation (PDF)** | [`docs/presentation.pdf`](docs/presentation.pdf) |
 | **Architecture diagram (PDF)** | [`docs/architecture.pdf`](docs/architecture.pdf) |

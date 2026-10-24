@@ -397,12 +397,7 @@ body::before { content: ""; position: absolute; left: 0; right: 0; top: 0; heigh
 .sheet { border-color: #e3e5e8; }
 #monitor > .sheet { box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 30px 70px rgba(10,12,14,.22); }
 .now .value b { font-weight: 700; letter-spacing: -.045em; }
-/* the three prediction cells carry the colour of what they state */
-.pred > div { position: relative; }
-.pred > div::before { content: ""; position: absolute; left: var(--s5); right: var(--s5); top: -1px; height: 3px; border-radius: 0 0 3px 3px; }
-.pred > div:nth-child(1)::before { background: var(--pred); }
-.pred > div:nth-child(2)::before { background: var(--crit-mark); }
-.pred > div:nth-child(3)::before { background: var(--sim); }
+/* the forecast number carries the forecast colour */
 .pred > div:nth-child(1) .value b { color: var(--pred-ink); }
 .pred .value b { font-weight: 700; letter-spacing: -.03em; }
 /* the alert: a dark panel like the deck's alert card */

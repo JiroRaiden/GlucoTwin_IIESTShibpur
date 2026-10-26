@@ -8,3 +8,5 @@ __pycache__/
 reports/_slide_preview_*.png
 dashboard/_shot.html
 
+
+*.mp4
